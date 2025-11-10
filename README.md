@@ -147,31 +147,6 @@ La documentación interactiva se genera automáticamente con **springdoc**.
 
 ---
 
-## 🧪 Pruebas sugeridas (las que pide la consigna)
-
-Subí las capturas de pantalla de estas pruebas al README o en una carpeta `/screenshots`:
-
-1. ✅ **POST** creando producto (debe devolver 201)
-2. ✅ **GET** listando todos
-3. ✅ **GET** por categoría
-4. ❌ **GET** por ID inexistente → debe devolver **404** con JSON de error
-5. ❌ **POST** con datos inválidos (sin nombre, stock negativo) → **400 Bad Request** con detalle de validación
-6. ✅ **DELETE** de un producto → **204 No Content**
-7. ✅ Consola H2 mostrando los datos persistidos
-
-Ejemplo de JSON de error esperado (por el `@ControllerAdvice`):
-
-```json
-{
-  "timestamp": "2025-11-10T22:30:15.123",
-  "status": 404,
-  "error": "Producto no encontrado con id: 99",
-  "path": "/api/productos/99"
-}
-```
-
----
-
 ## 🧱 Manejo de errores
 
 Se implementó un manejador global con `@ControllerAdvice` y `@ExceptionHandler` para:
@@ -195,7 +170,7 @@ Esto asegura **respuestas consistentes** en toda la API.
 ## 👤 Autor
 
 - **Nombre:** Lucas Pujada  
-- **Legajo:** *(completar)*  
+- **Legajo:** *(52736)*  
 - **Materia:** Programación III – UTN FRM  
 - **Año:** 2025
 
